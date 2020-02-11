@@ -12,7 +12,7 @@ class Song
     @name , @artist , @genre = name , artist , genre
     @@count +=1
     @@artists << artist 
-    @@genres << genre unless @@genres.include?(genre)
+    @@genres << genre 
     @@genre_count[genre]||=0
     @@genre_count[genre]+=1
     @@artist_count[artist]||=0
