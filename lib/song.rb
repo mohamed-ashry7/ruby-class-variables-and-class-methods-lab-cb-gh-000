@@ -12,18 +12,18 @@ class Song
     @name , @artist , @genre = name , artist , genre
     @@count +=1
     @@artists << artist
-    @@genres << genre 
+    @@genres << genre
     @@genre_count[genre]||=0
     @@genre_count[genre]+=1
     @@artist_count[artist]||=0
     @@artist_count[artist]+=1
   end
-  def self.count 
+  def self.count
     @@count
   end
   def self.artists
     @@artists
-  end 
+  end
   def self.genres
     @@genres
   end
