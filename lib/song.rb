@@ -18,5 +18,19 @@ class Song
     @@artist_count[artist]||=0
     @@artist_count[artist]+=1
   end
-
+  def self.count 
+    @@count
+  end
+  def self.artists
+    @@artists
+  end 
+  def self.genres
+    @@genres
+  end
+  def self.genre_count
+    @@genre_count
+  end
+  def artist_count
+    @@artist_count
+  end
 end
